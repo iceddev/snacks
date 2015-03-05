@@ -1,6 +1,6 @@
 {
   "name": "snacks",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Irken plugin exposing configuration options",
   "main": "index.js",
   "scripts": {
