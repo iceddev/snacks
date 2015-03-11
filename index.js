@@ -1,10 +1,10 @@
 'use strict';
 
 var levelup = require('levelup');
-var leveldown = require('leveldown');
+var memdown = require('memdown');
 var Immstruct = require('immstruct').Immstruct;
 
-var db = levelup('snacks', { db: leveldown, valueEncoding: 'json' });
+var db = levelup('snacks', { db: memdown, valueEncoding: 'json' });
 
 function snacks(app, opts, cb){
 

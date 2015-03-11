@@ -4,7 +4,8 @@
   "description": "Irken plugin exposing configuration options",
   "main": "index.js",
   "scripts": {
-    "test": "lab -cv"
+    "test": "zuul test/ --local --open",
+    "ci": "zuul test/ --phantom"
   },
   "repository": {
     "type": "git",
@@ -23,16 +24,18 @@
   },
   "homepage": "https://github.com/iceddev/snacks",
   "devDependencies": {
-    "code": "^1.3.0",
+    "expect": "^1.6.0",
     "irken": "^0.3.0",
-    "lab": "^5.4.0"
+    "mocha": "^2.2.1",
+    "phantomjs": "git://github.com/phated/phantomjs",
+    "zuul": "^2.1.1"
   },
   "peerDependencies": {
     "irken": ">=0.3.0"
   },
   "dependencies": {
     "immstruct": "^1.4.0",
-    "leveldown": "^0.10.4",
-    "levelup": "^0.19.0"
+    "levelup": "^0.19.0",
+    "memdown": "^1.0.0"
   }
 }
