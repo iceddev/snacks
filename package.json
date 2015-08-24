@@ -26,7 +26,7 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "@phated/redux-create-store": "^0.2.0",
+    "@phated/redux-create-store": "^0.3.0",
     "levelup": "^1.2.1",
     "memdown": "^1.0.0"
   },
