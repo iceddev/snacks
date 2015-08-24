@@ -27,5 +27,12 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-# generated files
-snacks/
+# Garbage files
+.DS_Store
+
+# Built files
+/creators
+/reducers
+/constants.js
+/index.js
+/level.js
