@@ -21,13 +21,13 @@ function snacks(app, opts, done){
   }
 
   function set(key, value){
-    return put(key, value)
+    return put(key, value, { sync: true })
       .then(() => get(key))
       .then((val) => store.dispatch(creators.update(key, val)));
   }
 
   function unset(key){
-    return del(key)
+    return del(key, { sync: true })
       .then(() => store.dispatch(creators.remove(key)));
   }
 
